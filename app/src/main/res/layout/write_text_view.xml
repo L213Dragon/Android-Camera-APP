@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/pad_30dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/round_corner_gray"
+            />
+        <EditText
+            android:id="@+id/et_write_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_14sp"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:padding="@dimen/pad_20dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

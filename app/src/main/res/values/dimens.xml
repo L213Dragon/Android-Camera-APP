@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="fragment_home_column_width">160dp</dimen>
+    <dimen name="fragment_home_collection_image_width">85dp</dimen>
+    <dimen name="fragment_home_member_profile_image_width">85dp</dimen>
+    <dimen name="fragment_home_member_profile_image_height">85dp</dimen>
+    <dimen name="fragment_home_member_star_size">10dp</dimen>
+
+    <dimen name="fragment_profile_margin">13dp</dimen>
+    <dimen name="fragment_product_confirmation_margin">5dp</dimen>
+    <dimen name="fragment_profile_textsize">18dp</dimen>
+
+    <dimen name="fragment_text_heading">24dp</dimen>
+    <dimen name="fragment_text_content">16sp</dimen>
+
+    <dimen name="fragment_order_management_text">13sp</dimen>
+
+    <dimen name="fragment_product_sub_productpicture">60dp</dimen>
+    <dimen name="fragment_product_max_height_productpicture">120dp</dimen>
+    <dimen name="fragment_myproduct_addbutton_text">13sp</dimen>
+    <dimen name="fragment_myproduct_add">5sp</dimen>
+
+    ////////////////////////
+    <dimen name="pad_5dp">5dp</dimen>
+    <dimen name="pad_10dp">10dp</dimen>
+    <dimen name="pad_15dp">15dp</dimen>
+    <dimen name="pad_20dp">20dp</dimen>
+    <dimen name="pad_30dp">30dp</dimen>
+    <dimen name="pad_40dp">40dp</dimen>
+    <dimen name="pad_chat_item">45dp</dimen>
+    <dimen name="pad_chat_item_r">90dp</dimen>
+    <dimen name="pad_chat_item1">10dp</dimen>
+
+    <dimen name="txt_7sp">7sp</dimen>
+    <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_13sp">13sp</dimen>
+    <dimen name="txt_14sp">14sp</dimen>
+    <dimen name="txt_15sp">15sp</dimen>
+    <dimen name="txt_16sp">16sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
+    <dimen name="txt_20sp">20sp</dimen>
+    /////////////////////////////////////
+
+    ///////////////material design
+    <dimen name="menu_list_item_height">48dp</dimen>
+    <dimen name="menu_list_subtitle_height">56dp</dimen>
+    <dimen name="menu_list_padding">16dp</dimen>
+    <dimen name="space_between_content">8dp</dimen>
+    <dimen name="menu_text_size">14sp</dimen>
+    <dimen name="edittext_hegit">36dp</dimen>
+</resources>

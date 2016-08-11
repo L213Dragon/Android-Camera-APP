@@ -1,0 +1,420 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.globalreviewcenter.view.fragments.MainFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/grey">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Write A Review"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/fragment_profile_margin"
+                android:background="#ffffff">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Information"
+                        android:textColor="@color/black"/>
+                    <android.support.percent.PercentRelativeLayout
+                        android:id="@+id/prl_main_personalinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_hegit"
+                        android:layout_marginTop="@dimen/pad_10dp"
+                        >
+                        <EditText
+                            android:id="@+id/et_main_firstname"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_heightPercent="100%"
+                            app:layout_widthPercent="28%"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/round_corner_gray"
+                            android:hint="First Name"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/txt_13sp"
+                            android:singleLine="true">
+
+                        </EditText>
+                        <EditText
+                            android:id="@+id/et_main_lastname"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_heightPercent="100%"
+                            app:layout_widthPercent="28%"
+                            android:layout_marginLeft="@dimen/pad_5dp"
+                            android:background="@drawable/round_corner_gray"
+                            android:layout_toRightOf="@+id/et_main_firstname"
+                            android:hint="Last Name"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/txt_13sp"
+                            android:singleLine="true">
+
+                        </EditText>
+                        <EditText
+                            android:id="@+id/et_main_email"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_heightPercent="100%"
+                            app:layout_widthPercent="38%"
+                            android:layout_marginLeft="@dimen/pad_5dp"
+                            android:background="@drawable/round_corner_gray"
+                            android:layout_toRightOf="@+id/et_main_lastname"
+                            android:layout_alignParentRight="true"
+                            android:hint="E-mail Address"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/txt_13sp"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true">
+
+                        </EditText>
+
+                    </android.support.percent.PercentRelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/pad_15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company Information"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/et_main_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_hegit"
+                        android:background="@drawable/round_corner_gray"
+                        android:hint="Company Name"
+                        android:textAlignment="center"
+                        android:layout_marginTop="@dimen/pad_10dp"
+                        android:textSize="@dimen/txt_13sp"
+                        android:singleLine="true"/>
+                    <android.support.percent.PercentRelativeLayout
+                        android:id="@+id/prl_main_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_hegit"
+                        android:layout_marginTop="@dimen/pad_10dp"
+
+                        >
+                        <EditText
+                            android:id="@+id/et_main_city"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_heightPercent="100%"
+                            app:layout_widthPercent="48%"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/round_corner_gray"
+                            android:hint="City"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/txt_13sp"
+                            android:singleLine="true">
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/et_main_country"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_heightPercent="100%"
+                            app:layout_widthPercent="48%"
+                            android:layout_marginLeft="@dimen/pad_5dp"
+                            android:background="@drawable/round_corner_gray"
+                            android:layout_alignParentRight="true"
+                            android:hint="State/Province"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/txt_13sp"
+                            android:singleLine="true">
+
+                        </EditText>
+
+                    </android.support.percent.PercentRelativeLayout>
+                </LinearLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/prl_main_article_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_hegit"
+                    android:layout_marginTop="@dimen/pad_15dp"
+                    >
+
+                    <!--video-->
+                    <RelativeLayout
+                        android:id="@+id/rl_main_video"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="30%"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/round_corner_gray"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_main_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Video"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/txt_15sp"
+                            android:textAlignment="center"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_main_audio"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="30%"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/round_corner_gray"
+                        >
+                        <TextView
+                            android:id="@+id/tv_main_audio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:hint="Audio"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/txt_15sp"
+                            android:textAlignment="center"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_main_text"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="30%"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/round_corner_gray"
+                       >
+                        <TextView
+                            android:id="@+id/tv_main_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:hint="Text"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/txt_15sp"
+                            android:textAlignment="center"/>
+                    </RelativeLayout>
+
+
+                </android.support.percent.PercentRelativeLayout>
+                <!--//5 stars-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/pad_20dp">
+                    <ImageView
+                        android:id="@+id/iv_main_star_0"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rating_star_on"
+                        android:layout_marginLeft="5dp"/>
+                    <ImageView
+                        android:id="@+id/iv_main_star_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rating_star_on"
+                        android:layout_marginLeft="5dp"/>
+                    <ImageView
+                        android:id="@+id/iv_main_star_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rating_star_on"
+                        android:layout_marginLeft="5dp"/>
+                    <ImageView
+                        android:id="@+id/iv_main_star_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rating_star_on"
+                        android:layout_marginLeft="5dp"/>
+                    <ImageView
+                        android:id="@+id/iv_main_star_4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rating_star_on"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_main_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/pad_30dp"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:paddingRight="@dimen/pad_20dp"
+                    android:fitsSystemWindows="true"
+                    >
+
+                </LinearLayout>
+
+                <!--proof button-->
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/prl_main_purchase_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_hegit"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/tv_main_purchase_photo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="70%"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/round_corner_gray"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Proof Of Purchase Photo"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/txt_15sp"
+                            android:textStyle="bold"
+                            />
+                    </RelativeLayout>
+
+
+                </android.support.percent.PercentRelativeLayout>
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/prl_main_additional_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_hegit"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/tv_main_additional_photo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="70%"
+                        app:layout_widthPercent="55%"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/round_corner_gray"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Upload Additional Photo"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/txt_15sp"
+                            android:textStyle="bold"
+                            />
+                    </RelativeLayout>
+
+
+                </android.support.percent.PercentRelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_main_container0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/pad_30dp"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:paddingRight="@dimen/pad_20dp"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/pad_30dp">
+                    <ImageView
+                        android:id="@+id/iv_main_check"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:src="@drawable/uncheck"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I agree to the terms and conditions and privacy policy."
+                        android:layout_marginLeft="@dimen/pad_10dp"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/prl_main_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_hegit"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/pad_15dp"
+                    >
+                    <Button
+                        android:id="@+id/btn_main_submit"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50%"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/round_corner_btn"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_15sp"
+                        android:textStyle="bold"
+                        >
+
+                    </Button>
+
+
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

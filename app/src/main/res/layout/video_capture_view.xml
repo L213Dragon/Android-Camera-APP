@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/ll_video_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_video_capture_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pad_20dp"
+        android:text="Touch down to record"
+        android:textColor="@color/white"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_start_background"/>
+        <Button
+            android:id="@+id/btn_start_capture_video"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_start_video"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/btn_start_capture_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_start_photo"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_change_camera"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_camera"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/pad_20dp"
+        android:layout_marginTop="@dimen/pad_10dp"
+        />
+
+</RelativeLayout>
